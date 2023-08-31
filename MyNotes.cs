@@ -1,6 +1,6 @@
 public static class MyNotes
 {
-    public static string VariablesPageOne =
+    public static string side =
 @"...
 In the vast savannah of computer memory, a remarkable phenomenon occurs. 
 Behold, the magnificent 'variables' – they are the vessels of information, the heart of computation. 
@@ -9,13 +9,9 @@ But tread with caution, for certain names are forbidden, like 'int', 'string', a
 With the gentle touch of the '=' operator, values are imbued unto these variables. 
 And lo, their types can be declared, like incantations, as in 'type variableName = value;'. 
 Observe: 
- int age = 32;
- string name = ""Jesper"";
- float awesomeLevel = 99.9f;
- bool TooCoolForSchool = false;
 ";
 
-    public static string VariablesPageTwo =
+    public static string side2 =
 @"...
 So often used without consideration for its magnificence, the humble 'variable' is the heart of computation. 
 It can be used to store and manipulate data, and is the backbone of all computer programs. 

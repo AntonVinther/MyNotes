@@ -24,7 +24,7 @@ public class Chapter
         foreach (Page page in Pages)
         {
             page.Read();
-            Console.WriteLine("\nPress any key to continue...");
+            Console.WriteLine("\nPress any key to move to the next page...");
             Console.ReadKey();
         }
         Console.Clear();

@@ -13,7 +13,7 @@ public class Book
     {
         Console.BackgroundColor = ConsoleColor.Black;
         Title = title;
-        Chapters = chapters;
+        Chapters = chapters; 
     }
 
     public void PrintChapters()
@@ -85,7 +85,7 @@ public class Book
             {
                 break;
             }
-            Chapter chapterToRead = GetChapter(input);
+            Chapter chapterToRead = GetChapter(input.ToLower());
             if (chapterToRead == null)
             {
                 Console.Clear();
