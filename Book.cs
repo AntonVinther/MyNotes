@@ -32,7 +32,7 @@ public class Book
     {
         foreach (Chapter chapter in Chapters)
         {
-            if (chapter.Title == title)
+            if (chapter.Title.ToLower() == title)
             {
                 return chapter;
             }
