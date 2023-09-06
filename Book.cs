@@ -68,18 +68,21 @@ public class Book
         while (true)
         {
             //Print book title and introduction
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(Title);
             Console.ResetColor();
-
-            Book.WriteLine("\nWelcome to your programming notes. " +
-                "This program will help you keep track of your notes " +
-                "for your programming projects.\n");
+            Console.ForegroundColor = ConsoleColor.White;
+            Book.WriteLine("\nVelkommen til dine programmerings noter " +
+                "\nDette program vil hjælpe dig med at huske alle de mega super awesome ting" +
+                "\nsom Jesper (the G.O.A.T) har sagt\n");
+        
 
             //Print chapter titles
+            Console.ResetColor();
             PrintChapters();
 
-            Console.WriteLine("\nEnter a chapter title (or 'quit/q/exit' to exit):");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("\nSkriv en kapitel titel (eller 'quit/q/exit' for at forlade programmet):");
             string input = Console.ReadLine();
             if (input.ToLower() == "quit" || input.ToLower() == "q" || input.ToLower() == "exit")
             {

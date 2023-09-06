@@ -17,18 +17,20 @@ public class Chapter
     public void Read()
     {
         Console.Clear();
-        Console.ForegroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine(Title);
-        Console.ResetColor();
-        Console.WriteLine("\nChapter contents:");
+        Console.ForegroundColor = ConsoleColor.White;
+        
         int i = 0;
         foreach (Page page in Pages)
         {
-            Console.WriteLine("\nReading page " + ++i);
+            Console.WriteLine("\nLæser nu: Side " + ++i + " " + Title + "\n");
             page.Read();
-            Console.WriteLine("\nPress any key to move to the next page...");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("\n \nPress any key to move to the next page...");
             Console.ReadKey();
             Console.Clear();
         }
+        
     }
 }
